@@ -6,6 +6,11 @@
   cursor: not-allowed;
 }
 
+.notepad {
+  border: 4px solid silver;
+  width: 500px;
+}
+
 .fc-unselectable {
   -webkit-user-select: none;
      -moz-user-select: none;

@@ -48,7 +48,7 @@
 <style>
 
   body {
-    margin: 40px 10px;
+    /* margin: 40px 10px; */
     padding: 0;
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 14px;
@@ -63,7 +63,20 @@
 </head>
 <body>
 
-  <div id='calendar'></div>
+    <div class="notepad" style="font-size: 18px;">
+        {% if length_todo == 0 %}
+            오늘의 할 일이 없습니다.<br>
+        {% else %}
+            오늘의 할 일은 {{message_todo}} 입니다.<br>
+        {% endif %}
 
+        {% if length_subject == 0 %}
+            오늘의 수업이 없습니다.<br>
+        {% else %}
+            오늘의 수업은 {{message_subject}} 입니다.
+        {% endif %}
+    </div>
+    <br>
+    <div id='calendar'></div>
 </body>
 </html>
